@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 1290px;
+    margin: 0 auto;
+    border: 3px solid black;
+    font-family: arial, verdana, sans-serif;
+}
+    #header {
+        background: brown;
+        width: 1270px;
+        padding: 20px 10px;
+        color: white;
+    }
+    #nav {
+        background: orange;
+        width: 1290px;
+    }
+        #nav ul {
+            list-style: none;
+        }
+            #nav ul li {
+                float: left;
+                width: 185px;
+                padding: 15px;
+                text-align: center;
+                transition: background 0.5s, color 0.5s, transform 0.25s linear;
+                border-radius: 5px;
+            }
+            #nav ul li:hover {
+                background: #ffd280;
+                color: brown;
+                transform: rotatez(360deg);
+            }
+            #nav a {
+                color: black;
+            }
+    #middle {}
+        #left {
+            width:845px;
+            height: 500px;
+            float: left;
+        }
+            .post {
+                margin: 20px;
+            }
+                .title {
+                    background: brown;
+                    color: white;
+                    padding: 10px;
+                    font-weight: bold;
+                    font-size: 25px;
+                    transition: background 0.5s;
+                }
+                .title:hover{
+                    background: #ffd280;
+                    color: black;
+                }
+                .description {
+                    background: silver;
+                    height: 40px;
+                    padding: 20px;
+                    overflow: inherit;
+                    white-space: normal;
+                    text-overflow: ellipsis;
+                }
+        #right {
+            background: lightblue;
+            width: 405px;
+            height: 500px;
+            float: left;
+            padding: 20px;
+        }
+            #right h2 {
+                text-align: center;
+            }
+            .trend {
+                background: brown;
+                color: white;
+                padding: 10px 0;
+                margin: 10px 0;
+                text-align: center;
+                transition: background 0.5s;
+            }
+            .trend:hover {
+                background: orange;
+                color: black;
+            }
+            #newsletter {}
+                .newsletter_head {
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                input[type="text"] {
+                    width: 400px;
+                    height: 30px;
+                    margin: 10px 0;
+                }
+                input[type="submit"] {
+                    background: orange;
+                    width: 400px;
+                    margin: 10px 0;
+                    padding: 10px 0;
+                    border: none;
+                    font-size: 20px;
+                    transition: background 0.5s;
+                }
+                    input[type="submit"]:hover {
+                        background: brown;
+                        color: white;
+                    }
+    #footer {
+        background: brown;
+        color: white;
+        width: 1290px;
+        padding: 20px 0;
+        text-align: center;
+    }

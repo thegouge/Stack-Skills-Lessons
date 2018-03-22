@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    background: silver;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+    header {
+        background: lightblue;
+        width: 1200px;
+        height: 100px;
+    }
+    nav {
+        background: orange;
+        width: 1200px;
+        height: 50px;
+    }
+    section {
+        background: grey;
+        width: 900px;
+        float: left;
+    }
+    aside {
+        background: lightgreen;
+        width: 300px;
+        float: left;
+    }
+        form {
+            background: silver;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+            .form-group {
+                margin: 10px;
+            }
+            .form-group label {
+
+                font-size: 15px;
+            }
+            .form-group input {
+                width: 100%;
+                display: block;
+                padding: 5px;
+                margin-top: 5px;
+                box-sizing: border-box;
+                box-shadow: inset 0 0 5px silver;
+                border: 1px solid grey;
+                outline: none;
+                transition: box-shadow 0.5s;
+            }
+            .form-group input:focus {
+                box-shadow: inset 0 0 0 silver, 0 0 20px lightgreen ;
+            }
+    section header {
+        background: none;
+    }
+    footer {
+        background: lightblue;
+        width: 1200px;
+        height: 50px;
+    }
+#style {}
+    #div1 {
+        background: linear-gradient(orange, red);
+        padding: 100px;
+        border: 5px solid black;
+        border-radius: 10px;
+        float: left;
+        margin: 10px;
+        font-size: 20px;
+        /*to the right, then to the bottom, then the glow, then color*/
+        text-shadow: 2px 2px black, 10px 20px blue;
+        color: white;
+    }
+    #div2 {
+        background: linear-gradient(35deg, black, white);
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+        float: left;
+        margin: 10px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 5px 5px 10px red;
+    }
+    #div3 {
+        background: radial-gradient(green 5%, lightgreen 60%, lightblue 100%);
+        padding: 100px;
+
+        float: left;
+        margin: 10px;
+        color: white;
+        text-shadow: 10px 10px black, -10px -10px orange, -10px 10px blue, 10px -10px red;
+        box-shadow: 0px 0px 10px black inset;
+    }
+    #div4 {
+        background: radial-gradient(green 5%, lightgreen 60%, lightblue 100%);
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 10px;
+        box-shadow: 0px 5px 10px silver;
+        transform: translate(50px, 50px);
+    }
+    #transformations {
+
+    }
+        #div5 {
+            width:200px;
+            background: orange;
+            border: 1px solid black;
+            margin: 50px;
+            word-break: break-all;
+            transform: rotate(30deg);
+            float: left;
+        }
+        #div6 {
+            width:200px;
+            background: orange;
+            border: 1px solid black;
+            margin: 50px;
+            word-wrap: break-word;
+            /*Imagine a skewer being put through along the specified axis*/
+            transform: rotateZ(-30deg);
+            float: left;
+        }
+        #div7 {
+            width:200px;
+            background: orange;
+            border: 1px solid black;
+            margin: 50px 200px;
+            word-wrap: break-word;
+            transform: scale(2, 2) skewX(45deg);
+            float: left;
+        }
+        #div8 {
+            width:200px;
+            background: orange;
+            border: 1px solid black;
+            margin: 50px;
+            word-wrap: break-word;
+            transform: skewY(20deg);
+            float: left;
+        }
+    #div9 {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        float: left;
+        background: orange;
+        border: 5px solid black;
+        border-radius: 10px;
+        transition: background 2s ease-in, transform 1s linear, border 0.5s;
+    }
+    #div9:hover {
+        background: red;
+        border: 5px dashed blue;
+        transform: rotatez(180deg);
+    }
+    #div10 {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        float: left;
+        background: orange;
+        border: 5px solid black;
+        border-radius: 10px;
+        animation: change1 1s;
+        animation-iteration-count: infinite;
+    }
+    #div11 {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        float: left;
+        background: orange;
+        border: 5px solid black;
+        border-radius: 10px;
+        animation: change2 5s;
+        animation-iteration-count: 3;
+        animation-timing-function: linear;
+    }
+    @keyframes change1 {
+        from {background: orange;}
+        to {background: blue; border-radius: 100px;}
+    }
+    @keyframes change2 {
+        0% {background: orange; width: 200px;}
+        25% {background: green; width: 300px;}
+        50% {background: red; width: 400px;}
+        100% {background: orange; width: 200px;}
+    }
+    #GRguide {
+        width: 1000px;
+        margin: 10px;
+        padding: 20px;
+
+        -webkit-column-count: 3;
+        -webkit-column-gap: 100px;
+        -webkit-column-rule: solid 10px red;
+
+        -moz-column-count: 3;
+        -moz-column-gap: 100px;
+        -moz-column-rule: solid 10px red;
+
+        background: silver;
+        border: 1px solid black;
+    }
+    #yam1 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: contrast(200%);
+        filter: contrast(200%);
+    }
+    #yam2 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    #yam3 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+    #yam4 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: opacity(50%);
+        filter: opacity(50%);
+    }
+    #yam5 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: saturate(1000%);
+        filter: saturate(1000%);
+    }
+    #yam6 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+    }
+    #yam7 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: sepia(100%);
+        filter: sepia(100%);
+    }
+    #yam8 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: hue-rotate(180deg) saturate(500%);
+        filter: hue-rotate(180deg) saturate(500%);
+    }
+    #yam9 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: ;
+        filter: ;
+    }
+    #yam10 {
+        width: 200px;
+        margin: 20px;
+        float: left;
+
+        -webkit-filter: ;
+        filter: ;
+    }

@@ -1,0 +1,199 @@
+
+#nav {
+    list-style: none;
+}
+#nav li {
+    float:left;
+    font-size: 30px;
+    background: silver;
+    color: black;
+    margin-left: 10px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+#nav li:hover {
+    background: black;
+    color: white;
+}
+#nav a {
+    color: black;
+}
+.plorp {
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    background-image: image(../../../../Pictures/Sanic.jpg);
+    background-position: center;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    color: red;
+    /*padding: top, right, bottom, left*/
+    padding: 50px 20px 0px 100px;
+    border-width: 10px;
+    border-top-style: dashed;
+    border-top-color: red;
+    border-top-right-radius: 10px;
+    border-right-color: green;
+    border-right-style: dotted;
+}
+.derp {
+    float: left;
+    height: 50px;
+    width:50px;
+    background-color: blue;
+    color: red;
+    /* margin: top, right, bottom, left; */
+    margin: 0px 50px 50px 20px;
+    /*border: width, color, style*/
+    border: 5px red solid;
+}
+
+.sanic{
+    background-image: url(../../../../Pictures/Sanic.jpg);
+    background-repeat: no-repeat;
+    color: yellow;
+}
+
+p {
+    background-color: lightblue;
+}
+
+#link {
+    background-color: pink;
+    color: green;
+}
+
+#table, td, th {
+    border-collapse: collapse;
+    border: 2px solid silver;
+}
+#table {
+    width: 450px;
+    height: 200px;
+}
+td {
+    text-align: center;
+    vertical-align: bottom;
+}
+tbody tr:hover {
+    background: silver;
+}
+thead tr {
+    background: black;
+    color: white;
+}
+
+a:link{
+    color: purple;
+}
+a:visited {
+    color: red;
+}
+a:hover {
+    color: green;
+}
+a:active {
+    color: white
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    background-color: pink;
+    color: white;
+}
+ol {
+    background-color: black;
+    color: red;
+}
+ol li {
+}
+#shrekt {
+    text-decoration: overline;
+    text-align: right;
+    text-transform: uppercase;
+    word-spacing: 200px;
+    font-weight: bold;
+    font-size: 50px;
+}
+#he_mad {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 5;
+    font-family: sans-serif;
+}
+#bloop {
+    text-transform: capitalize;
+    letter-spacing: 20px;
+    font-style: italic;
+    font-family: papyrus;
+}
+#falco {
+    font-variant: small-caps;
+    font-size: 20px;
+    text-align: right;
+    font-family: arial, helvetica, serif;
+}
+
+.grid-testing {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: "a a a"
+                         "b c d"
+                         "b c d";
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+    .top {
+        grid-area: a;
+        display: grid;
+        grid-template-areas:". . . b b b"
+                            "a a a b b b"
+                            ". . . b b b";
+        background: blue;
+    }
+        .name {
+            grid-area: a;
+            background: silver;
+        }
+        .details {
+            grid-area: b;
+            background: red;
+        }
+
+    .first-column {
+        grid-area: b;
+        background: red;
+        display: grid;
+        grid-template-areas:"a b b"
+                            "a b b"
+                            "a b b"
+                            "c c c"
+    }
+        .stats {
+            grid-area: a;
+            background: lightblue;
+        }
+        .skills {
+            grid-area: b;
+            background: green;
+        }
+        .other-prof {
+            grid-area: c;
+            background: black;
+        }
+
+    .second-column {
+        grid-area: c;
+        background: orange;
+    }
+
+    .third-column {
+        grid-area: d;
+        background: silver;
+    }
