@@ -2,13 +2,24 @@
 <html>
     <head>
         <title>Learning JS</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <input type="text" name="Input a String" id="input" value="" placeholder="Input a String">
+        <div class="app" id="palindrome">
+            <input type="text" name="Input a String" id="palindrome-input" value="" placeholder="Input a String">
 
-        <button onclick="palindrome()">Submit</button>
+            <button onclick="palindrome()">Submit</button>
 
-        <p id="output"></p>
+            <p id="palindromeOutput"></p>
+        </div>
+
+        <div class="app" id="birthday">
+            <input type="number" id="age" placeholder="put in your age" value="">
+            
+            <button onclick="birthday()">Submit</button>
+
+            <p id="birthOutput"></p>
+        </div>
 
         <script src="script.js"></script>
 

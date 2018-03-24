@@ -86,6 +86,7 @@ $(document).ready(function() {
         });
     });
 
+
     // Picks a random name from the names array and prints it
     $('#append').click(function() {
         $('#list').append('<li>' + names[Math.floor(Math.random() * names.length)] + '</li>');
