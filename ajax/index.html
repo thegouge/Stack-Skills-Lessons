@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Learning AJAX!</title>
+
+    <script>
+        function ajax_func() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if(xmlhttp.readyState == 4 && xmlhttp.status === 200) {
+                    var reciever = document.getElementById('dataDump');
+                    var response = xmlhttp.responseText;
+                    response = JSON.parse(response);
+                    reciever.innerHTML = response.counter;
+                }
+            }
+            xmlhttp.open('GET', 'data.json', true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ajax_func()">Click to retrieve Data</button>
+    <div id="dataDump">derp</div>
+</body>
+</html>
